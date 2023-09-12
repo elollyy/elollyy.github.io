@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задача №1</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+    </head>
+    <body>
+        <ol>
+            <li><a href="http://kubsu.ru">КубГУ</a></li>
+            <li><a href="https://kubsu.ru">КубГУ (протокол https)</a></li>
+            <li><a href="https://vk.com/"><img src="images/VK_logo.webp"></a></li>
+            <li><a href="page.html">Внутренняя страница</a></li>
+            <li><a href="#bottom">Фрагмент текущей страницы</a></li>
+            <li><a href="https://vk.com/?group_id=1234&list=2&users=142">Ссылка с 3 параметрами в URL</a></li>
+            <li><a href="https://www.wildberries.ru/?id=24531">Ссылка с параметром ID</a></li>
+            <li><a href="./page.html">Относительная страница в текущем каталоге</a></li>
+            <li><a href="./about/about.html">Относительная страница в каталоге about</a></li>
+            <li><a href="./catalog1/catalog2/catalog.html">Относительная страница двумя уровнями выше</a></li>
+            <li><p>Лучший вуз в мире <a href="https://kubsu.ru/index.php">КубГУ</a></p></li>
+            <li><a href="https://www.kubsu.ru/index.php/#section-content">Ссылка на секцию в стороннем сайте</a></li>
+            <li><p>map</p>
+            <li><div class="map_d">
+                <map name="Image">
+                    <area class="map_h" href="https://kubsu.ru/" shape="rect" coords="0,0,200,200" alt="Ссылка на квадратном объекте">
+                    <area class="map_h" href="https://kubsu.ru/" shape="circle" coords="0,0,0" alt="Ссылка на круглом объекте">
+                </map>
+                <img src="images/VK_logo.webp" alt="вконтакте" usemap="#Image">
+            </div></li>
+            <li><a href="">Пустая ссылка</a></li>
+            <li><a>Ссылка без href'a</a></li>
+            <li><a href="https://vk.com/" ref="nofollow">Ссылка, по которой запрещён переход поисковикам</a></li>
+            <li><!--noindex--><a href="https://kubsu.ru/">Ссылка, которую не будет индексировать Яндекс</a><!--/noindex--></li>
+            <li><ol>
+                <li title="первый"><a href="page.html">Ссылка в списке 1</a></li>
+                <li title="второй"><a href="./catalog1/catalog2/catalog.html">ссылка в списке 2</a></li>    
+                <li title="третий"><a href="./about/about.html">ссылка в списке 3</a></li>
+            </ol></li>
+            <li><a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg">ftp файл</a></li>
+            <li><a href="forms/form.html">Форма</a></li>
+        </ol>
+    </body>
+</html>
