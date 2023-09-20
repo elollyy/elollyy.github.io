@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">  
+        <title>Форма</title>
+    </head>
+    <body>
+        <form class="forms">
+            <input class="fname" type="text" placeholder="ФИО"><br>
+            <input class="ftel" type="tel" placeholder="Номер телефона"><br>
+            <input class="fmail" type="email" placeholder="E-Mail"><br>
+            <input class="fdate" type="date">
+            <div class="fradio">
+                <input class="frman" type="radio" name="drone" id="fman">
+                <label for="fman">Мужской</label>
+                <input class="frfemale" type="radio" name="drone" id="ffemale">
+                <label for="ffemale">Женский</label>
+            </div>
+            <select class="fselect">
+                <option>Pascal</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>JavaScript</option>
+                <option>PHP</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>Haskel</option>
+                <option>Clojure</option>
+                <option>Prolog</option>
+                <option>Scala</option>
+            </select><br>
+            <textarea class="farea" cols="20" rows="5"></textarea>
+            <div class="fcheckbox">
+                <input type="checkbox">
+                <label for="fcheckbox">С контрактом ознакомлен(а).</label>
+            </div>
+            <input type="button" value="Сохранить">
+        </form>
+    </body>
+</html>
