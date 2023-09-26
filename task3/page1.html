@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Задание 3</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo.webp" alt="logo" width="200px" height="35px">
+            <a href="./index.html"><button>Главная</button></a>
+            <div class="header_right">
+                <a href="./dir1/dir2/page.html"><button>Страница 2</button></a>
+                <a href="./about/about.html"><button>О нас</button></a>
+            </div>
+        </header>
+        <div class="main_container">
+            <ol>
+                <li><a href="http://kubsu.ru">Ссылка КубГУ</a></li>
+                <li><a href="https://kubsu.ru">Ссылка КубГУ с href</a></li>
+                <li><a href="https://serialfriends.online/"><img src="images/friends_frame.png" alt="frame" width="100px"></a></li>
+                <li><a href="./page1.html">Ссылка на внутреннюю страницу</a></li>
+                <li><a href="./index.html">Ссылка на главную страницу</a></li>
+                <li><a href="#bottom">Фрагмент текущей страницы</a></li>
+                <li><a href="http://ya.ru/?product=socks&color=black&size=m">Ссылка с тремя параметрами</a></li>
+                <li><a href="https://github.com/?id=12321321">Ссылка с параметром id</a></li>
+                <li><a href="./page1.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+                <li><a href="./about/about.html">Относительная ссылка на about</a></li>
+                <li><a href="./dir1/dir2/page.html">Ссылка на два каталога ниже</a></li>
+                <li>Лучший сериал смотреть <a href="https://serialfriends.online/">тут</a></li>
+                <li><a href="https://serialfriends.online/#section-content">Ссылка на секцию в стороннем сайте</a></li>
+                <li>
+                    <img src="./images/friends_sofa.webp" alt="sofa" width="100px" height="100px" usemap="#MapImage">
+                    <img src="./images/friends_sofa.webp" alt="sofa" width="100px" height="100px" usemap="#MapImage">
+                    <map name="MapImage" id="MapImage">
+                        <area shape="poly" coords="0,0,0,0,0,0" href="https://serialfriends.online/" alt="Друзья">
+                        <area shape="circle" coords="30,30,30" href="https://serialfriends.online/" alt="Друзья">
+                    </map>
+                </li>
+                <li><a href="">Ссылка с пустым href</a></li>
+                <li><a>Ссылка без href</a></li>
+                <li><a href="https://serialfriends.online/" rel="nofollow">Ссылка по которой не будет следовать Яндекс</a></li>
+                <li><!--noindex--><a href="https://serialfriends.online/">Ссылка, которую не будет индексировать Яндекс</a></li>
+                <li>
+                    <ol>
+                        <li title="Первая"><a href="./page1.html">Ссылка 1</a></li>
+                        <li title="Вторая"><a href="./about/about.html">Ссылка 2</a></li>
+                        <li title="Третья"><a href="./dir1/dir2/page.html">Ссылка 3</a></li>
+                    </ol>
+                </li>
+                <li><a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg">ftp файл</a></li>
+                <form action="">
+                    <input class="fname" type="text" placeholder="ФИО">
+                    <input class="ftel" type="tel" placeholder="Номер телефона">
+                    <input class="fmail" type="email" placeholder="E-Mail">
+                    <input class="fdate" type="date">
+                    <div class="fradio">
+                        <input class="frman" type="radio" name="drone" id="fman">
+                        <label for="fman">Мужской</label>
+                        <input class="frfemale" type="radio" name="drone" id="ffemale">
+                        <label for="ffemale">Женский</label>
+                    </div>
+                    <select class="fselect">
+                        <option>Pascal</option>
+                        <option>C</option>
+                        <option>C++</option>
+                        <option>JavaScript</option>
+                        <option>PHP</option>
+                        <option>Python</option>
+                        <option>Java</option>
+                        <option>Haskel</option>
+                        <option>Clojure</option>
+                        <option>Prolog</option>
+                        <option>Scala</option>
+                    </select>
+                    <textarea class="farea" cols="20" rows="5"></textarea>
+                    <div class="fcheckbox">
+                        <input type="checkbox">
+                        <label for="fcheckbox">С контрактом ознакомлен(а).</label>
+                    </div>
+                    <input type="button" value="Сохранить">
+                </form>
+                <table class="main_table">
+                    <caption>Таблица</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Колонка 1</th>
+                            <th scope="col">Колонка 2</th>
+                            <th scope="col">Колонка 3</th>
+                            <th scope="col">Колонка 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Строка 1</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Строка 2</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Строка 3</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Строка 4</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Строка 5</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="2">Значение 1</th>
+                            <td colspan="2">Значение 2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </ol>
+        </div>   
+        <footer>
+            <h4>© Сергей Синица</h4>
+        </footer>
+    </body>
+</html>
