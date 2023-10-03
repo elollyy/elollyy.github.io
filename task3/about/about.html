@@ -9,13 +9,13 @@
     </head>
     <body>
         <header>
-            <img src="../images/logo.webp" alt="logo" width="200px" height="35px">
-            <a href="../index.html"><button>Главная</button></a>
+            <img src=".././images/logo.webp" alt="logo">
+            <button onclick="location.href='.././index.html'">Главная</button>
             <div id="right">
                 <nav>
                     <ul>
-                        <li><a href="../dir1/dir2/page.html"><button>Страница 2</button></a></li>
-                        <li><a href="./about.html"><button>О нас</button></a></li>
+                        <button onclick="location.href='.././dir1/dir2/page.html'">Страница 2</button>
+                        <button onclick="location.href='./about.html'">Страница 2</button>
                     </ul>
                 </nav>
             </div>
@@ -24,9 +24,9 @@
             <ol>
                 <li><a href="http://kubsu.ru">Ссылка КубГУ</a></li>
                 <li><a href="https://kubsu.ru">Ссылка КубГУ с href</a></li>
-                <li><a href="https://serialfriends.online/"><img src="../images/friends_frame.png" alt="frame" width="100px"></a></li>
-                <li><a href="../page1.html">Ссылка на внутреннюю страницу</a></li>
-                <li><a href="../index.html">Ссылка на главную страницу</a></li>
+                <li><a href="https://serialfriends.online/"><img src=".././images/friends_frame.png" alt="frame" id="friends-frame"></a></li>
+                <li><a href=".././page1.html">Ссылка на внутреннюю страницу</a></li>
+                <li><a href=".././index.html">Ссылка на главную страницу</a></li>
                 <li><a href="#bottom">Фрагмент текущей страницы</a></li>
                 <li><a href="http://ya.ru/?product=socks&color=black&size=m">Ссылка с тремя параметрами</a></li>
                 <li><a href="https://github.com/?id=12321321">Ссылка с параметром id</a></li>
@@ -35,9 +35,9 @@
                 <li><a href=".././dir1/dir2/page.html">Ссылка на два каталога ниже</a></li>
                 <li>Лучший сериал смотреть <a href="https://serialfriends.online/">тут</a></li>
                 <li><a href="https://serialfriends.online/#section-content">Ссылка на секцию в стороннем сайте</a></li>
-                <li>
-                    <img src="../images/friends_sofa.webp" alt="sofa" width="100px" height="100px" usemap="#MapImage">
-                    <img src="../images/friends_sofa.webp" alt="sofa" width="100px" height="100px" usemap="#MapImage">
+                <li class="map-area">
+                    <img src="../images/friends_sofa.webp" alt="sofa" usemap="#MapImage">
+                    <img src="../images/friends_sofa.webp" alt="sofa" usemap="#MapImage">
                     <map name="MapImage" id="MapImage">
                         <area shape="poly" coords="0,0,0,0,0,0" href="https://serialfriends.online/" alt="Друзья">
                         <area shape="circle" coords="30,30,30" href="https://serialfriends.online/" alt="Друзья">
@@ -82,8 +82,8 @@
                 </select>
                 <textarea class="farea" cols="20" rows="5"></textarea>
                 <div class="fcheckbox">
-                    <input type="checkbox">
-                    <label for="fcheckbox">С контрактом ознакомлен(а).</label>
+                    <input type="checkbox" id="chbox">
+                    <label for="chbox">С контрактом ознакомлен(а).</label>
                 </div>
                 <input type="button" value="Сохранить">
             </form>
