@@ -25,12 +25,26 @@ header {
     align-items: center;
 }
 
-header a button {
+header button {
     color: white;
     background-color: black;
     border: none;
     font-size: 24px;
     font-family: 'Caveat', sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header img {
+    width: 200px;
+    height: 35px;
 }
 
 footer {
@@ -64,7 +78,9 @@ footer h4 {
     border-radius: 15px;
     background-color: rgba(255, 255, 255, .8);
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -79,16 +95,6 @@ footer h4 {
     font-size: 22px;
     font-family: 'Caveat';
     
-}
-
-.main_container form {
-    position: relative;
-    left: 55%;
-}
-
-.main_container table {
-    position: relative;
-    left: 48%;
 }
 
 .main_container form {
@@ -119,4 +125,13 @@ footer h4 {
 
 .main_container table th, td {
     border: 1px solid rgb(108, 117, 125);
+}
+
+#friends-frame {
+    width: 100px;
+}
+
+.map-area img {
+    width: 100px;
+    height: 100px;
 }
