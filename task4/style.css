@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Exo&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat';
+}
+
+body {
+    background-image: url(./images/background.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header .container {
+    max-width: 960px;
+    background: black;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+header #logo {
+    width: 180px;
+    height: 35px;
+}
+
+header #right nav {
+    font-size: 24px;
+}
+
+#links {
+    font-size: 24px;
+}
+
+.back-block {
+    width: 70%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .8);
+}
+
+.back-form {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(105, 105, 105, .2);
+}
+
+footer {
+    height: 50px;
+    background: rgba(0, 0, 0, .85);
+}
