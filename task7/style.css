@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    background-color: darkgrey;
+}
+
+.slider img {
+    width: 250px;
+    height: 250px;
+}

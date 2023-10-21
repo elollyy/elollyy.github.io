@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задача 6</title>
+        <script src="./scripts/script.js" defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main class="p-5">
+            <div class="container mx-auto d-flex justify-content-center" id="main-container">
+                <div class="row">
+                    <div id="calculator-1 p-3 border border-1 border-dark border-opacity-50 rounded-4" style="max-width: max-content;">
+                        <form id="form-calc1" class="p-3 border border-dark border-1 border-opacity-50 rounded-4">
+                            <div class="mb-2 border border-1 border-dark border-opacity-50 rounded-2">
+                                <input type="text" class="form-control" id="display-calculator" disabled>
+                            </div>
+                            <div class="mb-1">
+                                <label for="selectItem">Товар</label>
+                                <select class="form-select" name="selectProduct" id="selectProduct">
+                                    <option value="240">Малина (0.5 кг.)</option>
+                                    <option value="450">Клубника (1 кг.)</option>
+                                    <option value="370">Земляника (0.5 кг.)</option>
+                                    <option value="480">Голубика (0.5 кг.)</option>
+                                    <option value="270">Ежевика (0.4 кг.)</option>
+                                    <option value="320">Смородина (0.5 кг.)</option>
+                                </select>
+                            </div>  
+                            <div class="mb-3">
+                                <label for="inputCount" class="form-label">Кол-во товара</label>
+                                <input type="text" class="form-control" id="inputCount" value="1">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn btn-success" onclick="calculatePrice()">Посчитать стоимость</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="calculator-2" style="max-width: max-content;">
+                        <form id="form-calc2" class="p-3 border border-dark border-opacity-50 border-1 rounded-4">
+                            <div class="mb-2 border border-1 border-dark border-opacity-50 rounded-2">
+                                <input type="text" class="form-control" id="calc-display" disabled>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioList" id="radio1" value="1">
+                                <label class="form-check-label" for="radio1">Сушка волос</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioList" id="radio2" value="2">
+                                <label class="form-check-label" for="radio2">Наростить ногти</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioList" id="radio3" value="3">
+                                <label class="form-check-label" for="radio3">Удаление бровей</label>
+                            </div>
+                            <select class="form-select" id="selectWidth" style="display: none;">
+                                <option value="1">2 см</option>
+                                <option value="2">4 см</option>
+                                <option value="3">6 см</option>
+                            </select> 
+                            <div class="form-check" id='checkboxFull' style="display: none;">
+                                <input class="form-check-input" type="checkbox" name="checkFull" id="checkFull">
+                                <label class="form-check-label" for="checkFull">Полное удаление</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputCount" class="form-label">Вычислить стоимость</label>
+                                <input type="text" class="form-control" id="fullPrice" value="2">
+                            </div>
+                        </form>
+                    </div>                    
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
