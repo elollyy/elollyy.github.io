@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Exo&family=Roboto&display=swap');
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    background-image: url(./images/background.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#header {
+    background-color: black;
+}
+
+#header-logo {
+    width: 150px;
+}
+
+#pop-up {
+    display: none;
+}
+
+#footer {
+    background-color: black;
+}
