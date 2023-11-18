@@ -14,18 +14,22 @@ body {
     background-size: cover;
 }
 
-#header {
-    background-color: black;
-}
-
 #header-logo {
     width: 150px;
 }
 
-#pop-up {
-    display: none;
+.bg-main {
+    background-color: rgba(20, 20, 20, 1);
 }
 
-#footer {
-    background-color: black;
+.bg-main-opacity-85 {
+    background-color: rgba(20, 20, 20, 0.85);
+}
+
+.my-text-color {
+    color: hsla(0,0%,100%,.6);
+}
+
+#pop-up {
+    display: none;
 }
