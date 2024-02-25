@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    color: black;
+    font-size: 28px;
+    text-decoration: none;
+    width: 100%;
+}
+
+a:hover {
+    background-color: blanchedalmond;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0px 15px;
+}
